@@ -1,0 +1,45 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.wrapper {
+  width: 70vmin;
+  height: 70vmin;
+  background-color: #AACAAB;
+  margin: 0 auto;
+}
+.grid {
+  width: 100%;
+  position: relative;
+}
+.cell {
+  width: 15vmin;
+  height: 15vmin;
+  margin: 2vmin 2vmin 0 0;
+  background-color: #333;
+  float: left;
+}
+.cell:nth-child(4n+1) {
+  margin-left: 2vmin;
+}
+
+.number {
+  position: relative;
+  height: 15vmin;
+  width: 15vmin;
+  font-size: 15vmin;
+  font-weight: bold;
+  text-align: center;
+  line-height: 15vmin;
+  background-color: red;
+  color: white;
+  transition: all .3s;
+}
